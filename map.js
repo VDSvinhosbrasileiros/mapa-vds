@@ -4,7 +4,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '© OpenStreetMap'
 }).addTo(map);
 
-fetch('dados.json')
+fetch('https://docs.google.com/spreadsheets/d/e/2PACX-1vR1P5nIpyQzFnInggNQAlQxf5kbpR5bf-ywZ5hcdOkgG1qsW6OQHhLef-i4xtDPERH5pF7NEAYM0vMs/pub?output=csv')
+
   .then(response => response.json())
   .then(dados => {
     dados.forEach(local => {
