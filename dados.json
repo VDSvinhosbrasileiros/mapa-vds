@@ -1,0 +1,18 @@
+[
+  {
+    "nome": "Restaurante Maré Alta",
+    "cidade": "Vitória – ES",
+    "descricao": "Carta de vinhos construída em diálogo com a cozinha da casa.",
+    "lat": -20.3155,
+    "lng": -40.3128,
+    "vinicolas": [
+      {
+        "nome": "Vallebello",
+        "rotulos": [
+          "imagens/vallebello/merlot.jpg",
+          "imagens/vallebello/chardonnay.jpg"
+        ]
+      }
+    ]
+  }
+]
