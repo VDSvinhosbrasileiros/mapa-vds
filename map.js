@@ -10,52 +10,43 @@ Papa.parse(
     download: true,
     header: true,
     complete: function (results) {
+
       results.data.forEach(item => {
         const lat = parseFloat(item.lat);
         const lng = parseFloat(item.lng);
 
-        if (!lat || !lng) return;
+        if (isNaN(lat) || isNaN(lng)) return;
 
         let html = `
-          let html = `
-  <div class="card">
-    <h3>${item.nome}</h3>
-    <small>${item.cidade}</small>
-
-    <p class="selo">Estabelecimento parceiro VDS</p>
-
-    <p>${item.descricao}</p>
-`;
+          <div class="card">
+            <h3>${item.nome || ''}</h3>
+            <small>${item.cidade || ''}</small>
+            <p class="selo">Estabelecimento parceiro VDS</p>
+            <p>${item.descricao || ''}</p>
+        `;
 
         if (item.vinicola) {
-  html += `<h4>${item.vinicola}</h4>`;
-}
+          html += `<h4>${item.vinicola}</h4>`;
+        }
 
-if (item.rotulos) {
-  html += `<div class="galeria">`;
-
-  item.rotulos.split('|').forEach(img => {
-    html += `<img src="${img.trim()}" />`;
-  });
-if (item.instagram) {
-  html += `
-    <p style="margin-top:8px;">
-      <a href="${item.instagram}" target="_blank">
-        📲 Instagram do estabelecimento
-      </a>
-    </p>
-  `;
-}
-
-  html += `</div>`;
-}
-
-
+        if (item.rotulos) {
+          html += `<div class="galeria">`;
           item.rotulos.split('|').forEach(img => {
-            html += `<img src="${img.trim()}" />`;
+            if (img.trim()) {
+              html += `<img src="${img.trim()}" />`;
+            }
           });
-
           html += `</div>`;
+        }
+
+        if (item.instagram) {
+          html += `
+            <p style="margin-top:8px;">
+              <a href="${item.instagram}" target="_blank">
+                📲 Instagram do estabelecimento
+              </a>
+            </p>
+          `;
         }
 
         html += `</div>`;
@@ -64,6 +55,7 @@ if (item.instagram) {
           .addTo(map)
           .bindPopup(html);
       });
+
     }
   }
 );
