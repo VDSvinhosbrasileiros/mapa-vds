@@ -1,13 +1,31 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f7f5f2;
+  font-family: "Georgia", serif;
+  background-color: #f6f4f1;
+  color: #2c2c2c;
 }
 
 .header {
   text-align: center;
-  padding: 20px;
+  padding: 24px 16px;
   background-color: #ffffff;
+  border-bottom: 1px solid #e2ded8;
+}
+
+.logo {
+  max-width: 140px;
+  margin-bottom: 12px;
+}
+
+.header h1 {
+  margin: 6px 0;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.header p {
+  font-size: 14px;
+  color: #6b6b6b;
 }
 
 #map {
@@ -16,31 +34,44 @@ body {
 }
 
 .leaflet-popup-content {
-  max-width: 260px;
+  max-width: 280px;
+  font-family: "Arial", sans-serif;
 }
 
 .card h3 {
   margin: 0;
   font-size: 16px;
+  color: #5a1f2b; /* vinho */
 }
 
 .card small {
-  color: #666;
+  display: block;
+  margin-bottom: 6px;
+  color: #777;
 }
 
 .card p {
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.45;
+}
+
+.card h4 {
+  margin: 10px 0 4px;
+  font-size: 14px;
+  color: #5a1f2b;
 }
 
 .galeria {
   display: flex;
   gap: 6px;
-  margin-top: 6px;
+  margin-bottom: 8px;
   overflow-x: auto;
 }
 
 .galeria img {
-  height: 80px;
+  height: 78px;
   border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: #fff;
 }
+
