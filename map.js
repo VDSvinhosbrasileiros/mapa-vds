@@ -17,11 +17,15 @@ Papa.parse(
         if (!lat || !lng) return;
 
         let html = `
-          <div class="card">
-            <h3>${item.nome}</h3>
-            <small>${item.cidade}</small>
-            <p>${item.descricao}</p>
-        `;
+          let html = `
+  <div class="card">
+    <h3>${item.nome}</h3>
+    <small>${item.cidade}</small>
+
+    <p class="selo">Estabelecimento parceiro VDS</p>
+
+    <p>${item.descricao}</p>
+`;
 
         if (item.vinicola && item.rotulos) {
           html += `<h4>${item.vinicola}</h4><div class="galeria">`;
