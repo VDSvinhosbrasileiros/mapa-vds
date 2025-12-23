@@ -2,7 +2,7 @@
   {
     "nome": "Restaurante Maré Alta",
     "cidade": "Vitória – ES",
-    "descricao": "Carta de vinhos construída em diálogo com a cozinha da casa.",
+    "descricao": "Carta de vinhos construída em diálogo com a cozinha da casa, priorizando rótulos brasileiros de produção limitada.",
     "lat": -20.3155,
     "lng": -40.3128,
     "vinicolas": [
@@ -11,6 +11,48 @@
         "rotulos": [
           "imagens/vallebello/merlot.jpg",
           "imagens/vallebello/chardonnay.jpg"
+        ]
+      },
+      {
+        "nome": "Berkano",
+        "rotulos": [
+          "imagens/berkano/pinot.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Casa Encosta",
+    "cidade": "Vila Velha – ES",
+    "descricao": "Wine bar de cozinha autoral, com foco em harmonizações e curadoria exclusiva de vinhos brasileiros.",
+    "lat": -20.3425,
+    "lng": -40.2873,
+    "vinicolas": [
+      {
+        "nome": "Bodega Iribarrem",
+        "rotulos": [
+          "imagens/iribarrem/tannat.jpg"
+        ]
+      },
+      {
+        "nome": "Casa Marques Pereira",
+        "rotulos": [
+          "imagens/casa-marques/corte.jpg"
+        ]
+      }
+    ]
+  },
+  {
+    "nome": "Raízes Capixabas",
+    "cidade": "Guarapari – ES",
+    "descricao": "Cozinha regional contemporânea que valoriza ingredientes locais e vinhos de identidade.",
+    "lat": -20.6530,
+    "lng": -40.5031,
+    "vinicolas": [
+      {
+        "nome": "Cave Antiga",
+        "rotulos": [
+          "imagens/cave-antiga/nature.jpg"
         ]
       }
     ]
