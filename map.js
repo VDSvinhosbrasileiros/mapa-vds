@@ -27,8 +27,29 @@ Papa.parse(
     <p>${item.descricao}</p>
 `;
 
-        if (item.vinicola && item.rotulos) {
-          html += `<h4>${item.vinicola}</h4><div class="galeria">`;
+        if (item.vinicola) {
+  html += `<h4>${item.vinicola}</h4>`;
+}
+
+if (item.rotulos) {
+  html += `<div class="galeria">`;
+
+  item.rotulos.split('|').forEach(img => {
+    html += `<img src="${img.trim()}" />`;
+  });
+if (item.instagram) {
+  html += `
+    <p style="margin-top:8px;">
+      <a href="${item.instagram}" target="_blank">
+        📲 Instagram do estabelecimento
+      </a>
+    </p>
+  `;
+}
+
+  html += `</div>`;
+}
+
 
           item.rotulos.split('|').forEach(img => {
             html += `<img src="${img.trim()}" />`;
