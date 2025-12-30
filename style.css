@@ -74,3 +74,11 @@ body {
   border: 1px solid #ddd;
   background-color: #fff;
 }
+.galeria a img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.galeria a img:hover {
+  transform: scale(1.05);
+}
