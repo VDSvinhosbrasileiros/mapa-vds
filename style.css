@@ -7,26 +7,31 @@ body {
 
 .header {
   text-align: center;
-  padding: 24px 16px;
+  padding: 20px 16px 16px;
   background-color: #ffffff;
   border-bottom: 1px solid #e2ded8;
 }
 
 .logo {
-  max-width: 140px;
-  margin-bottom: 12px;
+  max-width: 160px;
+  margin-bottom: 8px; /* aproxima da tipografia */
 }
 
 .header h1 {
-  margin: 6px 0;
-  font-size: 22px;
-  font-weight: normal;
+  margin: 4px 0 2px;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  color: #3a3a3a;
 }
 
 .header p {
-  font-size: 14px;
-  color: #6b6b6b;
+  margin: 0;
+  font-size: 15px;
+  color: #6a6a6a;
+  font-style: italic;
 }
+
 
 #map {
   width: 100%;
