@@ -21,7 +21,8 @@ Papa.parse(
           <div class="card">
             <h3>${item.nome || ''}</h3>
             <small>${item.cidade || ''}</small>
-            <p class="selo">Estabelecimento parceiro VDS</p>
+            <p class="selo">
+            </p>
             <p>${item.descricao || ''}</p>
         `;
 
